@@ -1,7 +1,7 @@
-# TAREA 10 API de Biblioteca de Música con Express y Sequelize
+# Biblioteca de Música con Express y Sequelize
 
 Este proyecto de Backend esta desarrollado en NODE JS, Corre en la siguiente URL:
-Open [http://localhost:3000](http://localhost:4000). Puedes usarlo con Postman.
+Open [http://localhost:4000](http://localhost:4000). Puedes usarlo con Postman.
 
 # Rutas para usar en Postman
 
