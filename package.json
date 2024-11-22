@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npm install pg"
+    "preinstall": "npm install pg",
+    "build": "npm install pg && npm run build"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +16,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "pg": "^8.13.1",
+    "pg": "^8.7.1",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.37.3"
   },
