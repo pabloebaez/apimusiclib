@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import artistRoutes from './src/routes/artistRoutes.js';
 import songRoutes from './src/routes/songRoutes.js';
+import versionRoutes from './src/routes/version.js';
 // import { errorHandler } from './src/middlewares/errorHandler.js';
 import sequelize from './src/config/database.js';
 import './src/models/associations.js';
@@ -19,6 +20,7 @@ app.use(express.json());
 app.use(cors()); // Habilita CORS para todas las rutas
 app.use('/api/artists', artistRoutes); // Ruta para manejar artistas
 app.use('/api/songs', songRoutes); // Ruta para manejar canciones
+app.use('/api/version', versionRoutes);
 app.use((req, res, next) => {
   console.log(`${req.method} ${req.url}`);
   next();
